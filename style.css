@@ -12,7 +12,7 @@ body {
   display: block;
   margin: auto;
   min-height: 100vh;
-  background: #00ffff;
+  background: #000080;
   font-family: sans-serif
   }
 
@@ -48,7 +48,8 @@ body {
     opacity: 1;
   }
   /* home section*/
-  .home-section.active{
+  .home-section.active
+  {
     position: relative;
     opacity: 1;
     z-index: 8;
@@ -78,7 +79,7 @@ body {
     height: 100vh;
     width: 50%
     object-fit: cover;
-    opacity: 0.2;
+    opacity: 0.8;
     
   }
   /* project section*/
@@ -92,11 +93,10 @@ body {
   }
   .project-heading{
     font-size: 80px;
-    background: #fff;
+    background: #00ff;
     text-transform: capitalize;
     text-align: center;
-    margin-bottom: 50px;
-    color: #1a1a1a;
+    margin-bottom: 40px;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-stroke: 8px transparent;
@@ -115,45 +115,111 @@ body {
     width: 45%;
     height: 60%;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 2;
+    left: 4;
     object-fit: cover;
     transition: .5s;
   }
   .project-content{
     position: relative;
     padding: 50px;
-    color: #000080;
+    color: #000;
     transition: .5s;
     opacity: 0;
+    
   }
   .project-info{
-    font-size: 30px;
-    text-transform: capitalize;
+    font-size: 30px; 
+    text-transform: ;
     text-align: left;
-    font-weight: 50;
+    font-weight: 30;
   
   }
   .project-title{
     font-size: 30px;
-    text-transform: capitalize;
-    text-align: left;
+    text-transform:;
+    text-align: center;
     font-weight: 300;
   }
   .project-btn-grp{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    grid-template-columns: repeat(2, 0.2fr);
+    grid-gap: 10px;
   }
   .project-btn{
     height: 40px;
     text-transform:capitalize;
-    font-size: 18px;
+    font-size: 10px;
     border: none;
-    background: #0000;
-    color: #ffff;
+    background: #000;
+    color: #000;
     cursor: pointer;
+    size: 20px;
   }
-  
-  
-  
+  .project-btn.live{
+    background: none;
+    border: 2px solid #fff;
+  }
+  .project-card:hover .project-img{
+     filter: blur(20px);
+  }
+  .project-card:hover .project-content{
+     opacity: 1;
+  }
+/* about section */
+.about-section{
+  width: 100%;
+  min-height: 100vh;
+  padding: 150px 100px 0;
+  position: reltive;
+  top: 0;
+  transition: 1s;
+}
+.about{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 70%;
+  grid-gap: 40px;
+}
+.about-img-container{
+  position: relative;
+}
+.about-info{
+  color: #000;
+  opacity: 1;
+  font-size: 20px;
+  line-height: 40px;
+}
+  .about-img{
+    width: 500%;
+    height: 200%;
+    object-fit: cover;
+    border-radius: 60px;  
+  } 
+  .download-cv-btn{
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    transform: translatex(-0%);
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    text-transform: capitilize;
+    cursor: pointer;
+    transition: .5s;
+    background: rgba(0,0,0,0.5);
+  }
+  /* skills*/
+  .skill-section{
+    position: relative;
+    margin: 100px 0;
+  }
+  .heading {
+    text-align: center;
+    font-size: 60px;
+    color: #000;
+    text-transform: capitilize;
+    font-weight: 300;
+    margin-bottom: 100px;
+  }
