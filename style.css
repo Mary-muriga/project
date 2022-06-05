@@ -48,7 +48,8 @@ body {
     opacity: 1;
   }
   /* home section*/
-  .home-section.active{
+  .home-section.active
+  {
     position: relative;
     opacity: 1;
     z-index: 8;
@@ -82,7 +83,7 @@ body {
     
   }
   /* project section*/
-  .project.section{
+  .project.section.active{
     width: 100%;
     min-height: 100vh;
     padding: 150px 100px 100px;
@@ -126,9 +127,10 @@ body {
     color: #000080;
     transition: .5s;
     opacity: 0;
+    
   }
   .project-info{
-    font-size: 30px;
+    font-size: 30px; 
     text-transform: capitalize;
     text-align: left;
     font-weight: 50;
@@ -143,17 +145,28 @@ body {
   .project-btn-grp{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    grid-gap: 10px;
   }
   .project-btn{
     height: 40px;
     text-transform:capitalize;
-    font-size: 18px;
+    font-size: 10px;
     border: none;
-    background: #0000;
-    color: #ffff;
+    background: #000;
+    color: #000;
     cursor: pointer;
   }
+  .project-btn.live{
+    background: none;
+    border: 2px solid #fff;
+  }
+  .project-card:hover .project-img{
+     filter: blur(20px);
+  }
+  .project-card:hover .project-content{
+     opacity: 1;
+  }
+
   
   
   
